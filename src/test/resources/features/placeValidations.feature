@@ -1,6 +1,6 @@
 Feature: Validating Place API's
 
-  @AddPlace
+  @AddPlace @Regression
   Scenario Outline: Verify If Place is being Successfully Added
     Given Add Place Payload with "<name>", "<language>" and "<address>"
     When user calls "AddPlaceAPI" with "Post" http request
@@ -17,7 +17,7 @@ Feature: Validating Place API's
 #      | AdemTest3 | Arabic   | Antep     |
 #      | AdemTest4 | Italian  | Adana     |
 
-  @DeletePlace
+  @DeletePlace @Smoke @Regression
   Scenario: Verify if Delete Place functionality is working
     Given Delete Place Payload
     When user calls "DeletePlaceAPI" with "Post" http request
