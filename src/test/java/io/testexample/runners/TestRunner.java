@@ -30,9 +30,4 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 //    public Object[][] scenarios() {
 //        return super.scenarios();
 //    }
-    @Parameters("baseURI")
-    @BeforeClass
-    public void setUp(){
-
-    }
 }
