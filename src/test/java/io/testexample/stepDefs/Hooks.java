@@ -8,8 +8,6 @@ public class Hooks {
 
     @Before("@DeletePlace")
     public void setUp(){
-
-
         if(PlaceValidations.place_id==null){
             stepDefMethods = new PlaceValidations();
             stepDefMethods.add_place_payload_with_and("AdemHook","Turkish","Europe");
