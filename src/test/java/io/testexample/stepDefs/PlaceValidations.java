@@ -39,8 +39,8 @@ public class PlaceValidations extends BaseTest {
     public void is_response_body(String keyValue, String expectedValue) {
         response.then().assertThat().body(keyValue, Matchers.equalTo(expectedValue));
     }
-    @Then("vefify place_Id created maps to {string} using {string}")
-    public void vefify_place_id_created_maps_to_using(String expectedName, String resource) {
+    @Then("verify place_Id created maps to {string} using {string}")
+    public void verify_place_id_created_maps_to_using(String expectedName, String resource) {
         place_id = response.jsonPath().get("place_id");
         request = given().spec(requestSpecification()).queryParam("place_id",place_id);
         user_calls_with_http_request(resource, "GET");
